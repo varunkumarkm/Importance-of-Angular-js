@@ -1,0 +1,8 @@
+<input type="text"[(ngModel)] = 'my_message'/>
+
+<!-- [(ngModel)] directive - This is used to the 'takes the value from the particular text field and
+                        it will assign and bind it to the particular javaScript variable' -->
+<button (click) = "convert({'title': my_message})">Submit</button>
+<br>
+<h1 style="color: red;">{{result | json}}</h1>
+

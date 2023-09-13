@@ -1,0 +1,10 @@
+
+<h1>HDFC Bank EPIP</h1>
+
+<ul [ngSwitch]="atm">
+    <li *ngSwitchCase="'Withdrawl'"> Withdrawl</li>
+    <li *ngSwitchCase="'Deposit'"> Deposit</li>   
+    <li *ngSwitchCase="'BalanceCheck'"> Balance Check</li>    
+    <li *ngSwitchDefault> Invalid choice</li>   
+</ul>
+

@@ -1,0 +1,24 @@
+<h1 [style.background-color]="'blue'">For Loop!!</h1>
+
+<div *ngFor="let course of cources">
+    <b>{{course}}</b>
+    <div ngNonBindable>The code render the above is {{course}}</div>
+    <h2>{{course}}</h2>
+</div>
+
+<table style="width:50%">
+    <thead>
+        <tr>
+            <td [ngStyle]="{color:color,'background-color':'blue'}">Student Id</td>
+            <td [style.font-size.px]="fontSize">Student Name</td>
+            <td [style.font-size.px]="fontSize">Student Cource</td>
+            <td>Student TestScore</td>
+        </tr>
+    </thead>
+    <tr *ngFor="let student of students">
+        <td [style.color]="color" [ngClass]="classObj">{{student.id}}</td> 
+        <td [style.color]="color" [style.font-size.px]="fontSize">{{student.name}}</td>
+        <td [style.color]="'green'">{{student.course}}</td>
+        <td [style.background-color]="'red'">{{student.testScore}}</td>       
+    </tr>
+</table>

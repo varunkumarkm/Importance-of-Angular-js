@@ -1,0 +1,20 @@
+<h1>For Loop Example!!</h1>
+
+<div *ngFor="let movie of movies">
+ <h1>{{movie.title}}</h1>
+</div>
+
+<table style="width:50%">
+    <thead>
+        <tr>
+            <td>Title name</td>
+            <td>Language</td>
+            <td>Relese Year</td>
+        </tr>
+    </thead>
+    <tr *ngFor="let movie of movies">
+        <td>{{movie.title}}</td> 
+        <td>{{movie.language}}</td>
+        <td>{{movie.releseYear}}</td>       
+    </tr>
+</table>

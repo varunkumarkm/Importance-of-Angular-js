@@ -1,0 +1,50 @@
+https://restcountries.eu/rest/v2/all - This is the URL all the which is featching all the country 
+information along with the flag etc.
+
+http://test-routes.herokuapp.com/test/uppercase
+
+http://test-routes.herokuapp.com/test/hello
+
+https://www.w3schools.com/angular/customers.php
+
+https://jsonplaceholder.typicode.com/posts - This is link is working
+
+productApi:
+-> When use using a CRUD operation we use a dependencies are:  
+1) express: The command is yarn add express --save    it will download all the required elements 
+                                                      in the internet
+2) MySQL: The command is yarn add mysql --save   Ths will download mysql dependency
+When I'am getting an error using these commands are:
+* yarn outdated  * yarn cache clean   * yarn install then using yarn add mysql --save
+
+step 1 - is to establish a database connection, we are going to use two files are:
+         1) db_connection.js - This will responsible for creating database connection and 
+            returning it mysql modules   
+         2) db_properties.js - This will store the connection information, this will used by 
+            db_connection.js
+step 2 - is to creating a controller that will host our RESTful API's, this controller use the
+         db_connection and routes 
+
+Routers:
+Routing is what application is do when the user navigates to from one web page to another in a web 
+application 
+In traditional web application: Before single page application the way it is to work is that the 
+application is running on the browser will send a request to the server, server is process the 
+request and send back to the next view back to the browser, So the routing and navigation
+is happen to the server side
+But in case single page application the entire routing is done on the client side.
+
+Angular provides router modules which is super easy to configure of our routing application 
+there are three important components of routing are:
+1) Routes - This routes repersents all routes navigation links with our application
+2) RouterOutlet - This is the place holder component that shows angular where to put contents of 
+                  each router
+3) RouterLink - Using this link to add a link to our html pages and click onto the link automatically
+                client will be routed to appropriate to the page or router 
+
+When we working on routing these three link is important
+
+1) Create routing.module.ts
+2) Create <routing-outlet> in html
+3) import routing.module.ts in to AppModule
+

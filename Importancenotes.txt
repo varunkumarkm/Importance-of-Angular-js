@@ -1,0 +1,146 @@
+1) Single page application
+-> spa's are web applications that run entirely in a web browser and do not need a any page reloades.
+   In single page application the will loaded at initially once, and the user access the web application
+   that is why the name is single page application.
+   ex: facebook and gmail
+   In facebook, when we click on one page to another it will not refreashing
+
+Advantages:
+   * It provides a great user experience
+   * It is very fast
+   * It's very easy to develop, Because we seperate out the backend and frontend
+   * spa's can work offline, once all the data is featched 
+
+Disadvantages:
+   * spa's are less secure, Because we need to interact backend side, 
+     we need to enabled cross-site scripting
+   * chances for memory leak, we can handle it javaScript memory leaks properly 
+
+2) Traditional page application
+-> when a user when using our we application, user click on a button or a link, request will sent to a 
+   server, and server side code is responsible for generating brand new UI or a html page which will be 
+   send back to the browser, result in a page refresh
+
+3) What Angular js is and why?
+-> * Angular js is a spa's developement framework or platform, that is using HTML and TypeScript
+
+     Architectural feature:
+   * Using Angular js we can quickly and easily build a single page applications.
+   * The first architectural feature is component
+
+4)  Component:
+    * Every angular application is made up of one component, a component is a combination of
+    data and logic and associated with HTML templates that renders with the using logics on to 
+    the web browser
+    * Every application will have root component followed by the several other components 
+    renders the different parts of our application on to the browser
+    * For every application will have the root component followed by the several other components
+    we have to render different parts of our application on to the browser
+
+5)  HTML template:
+    * The html template than we can use two other cool feature as to offer namely:
+    1) Angular Directives    2) Data Binding
+
+    1) Angular Directives - Using angular directives, we can define logic in our HTML page
+    2) Data Binding - Using data binding we can bind the data to the HTML DOM element.
+       There are two types of data binding are:
+       * Event Binding and *Property Binding 
+       
+       *Event Binding - this is button click and or when the user places a mouse to text or input field etc.
+       *property binding - which will bind the HTML input properties to the model in our application component
+
+6)  Service:
+    service is a class are used to featch the data from the backend, Angular knows how to use services
+    whatever services we write we can use dependency injection to inject that service into a component
+    and then the component in use the service to featch the data and render it onto the UI
+    So, Dependency injection and services are other cool features of Angular
+
+    Routing:
+    As the user clicks on the button or link are the browser back button, we need to routing to the 
+    appropriate view.
+    Angular provides routing module which can use to easily map url paths to views instead of pages
+
+    Versions of Angular: 
+    -> The major changes of angular version is Angular 2, its completly different on Angular 1.0
+    Angular 4 5 and 6 is the minor updates
+
+7) How to install and how to use the latest version of Angular CLI:
+   1) install a node-js
+   2) install the angular CLI using the command - npm uninstall -g @angular/cli
+                                               npm install -g @angular/cli
+   3) ng version - This command is shows a angular version
+   4) ng new my-app - This is the command we used to create a project
+   -> asking stricter type checking - yes , it will be very benitial, our application code strictly
+   checked for type of data we deal with
+   -> Would you like angular routing - ignore add it later, when we required
+   -> Go to the inside of the project folder ex: cd my-app
+   -> ng serve -o - This is command we run our application into the browser
+   -> yarn installation on google, just type yarn installation or npm install --global yarn use this command
+
+   Practical:
+
+Component - A component is a key feature of an angular using which we will create our own HTML like 
+            elements are:
+            <navbar>    <mymenu>   <footer> 
+            These are all custom HTML tag or custom elements which are there own look and behaviour
+            and we create this using existing html elements are:
+            <div>  <h1>  <a>   <from> etc.
+
+
+8)  NgModules or Router - The basic building block of a angular application are: ngModule or AngularModules
+            So ngModule defines a compilation context for a set of components or a services that address
+            a particular functionality of our application    
+Advantages: * Easy maintainable or code and then reuseability    
+
+Amgular supports two way of binding?
+-> 1) Input way of binding  - [hiddden]=true or false, or else add a property for component, the pass 
+                              property name hide or anything ex: [hiddden]='hide'
+   2) output way of binding - It is used to when we hide the Input binding, it supports show that 
+                              binding to the users ex:
+                              <input type="button" value="Toggle" (click)="hide=!hide"/>
+
+9) Directives:
+-> Directives means in html, we added to attribute in our HTML elements, which will dynamically
+   effect the HTML DOM 
+    1) ngIf - This directives is used to display a html conditionally
+       ex: <b *ngIf='true'>My text</b>   if its true directly added to the HTML DOM, if false not added
+    2) ngSwitch - When we use ngSwitch the elements is matches with the ngSwitchs case then will be
+       displayed 
+       ex: <div [ngSwitch] = 'mycase'>
+           <div *ngSwitchCase = '''one'''>
+           <div *ngSwitchCase = '''two'''>
+           <div *ngDefaultCase = '''one'''>
+    3) ngFor - As the name itself says it is used to repeate given DOM element based on each element
+               in an array 
+               ex: <div *ngFor='let c of cources'>
+                      <b>c</b>   
+                   </div>
+    4) ngNonBindable - It is used to tell angular not to bing or compiler part of our page
+             ex: <div>{{myData}}</div>
+    5) ngstyle  and  ngClass  - This will used to styling purpose  
+       ngStyle - [style.<cssproperty>]='values'
+       ngClass - it is directly assign particular css to the html elements
+                 ex: [ngClass] = "{tdata:true}" 
+
+10) Dependency injection?
+-> When we build huge software application or single page applications, we don't put all the 
+   code in one single component, that code will be spread across the component
+
+   To do dependency injection on angular the two steps are:
+   1) step-1 - First Register any component or any dependency inside the ngModule, 
+                 that is app.module.ts
+   2) step-2 - Is to use or inject itself we do that simply provided a constructor
+
+   https://restcountries.com/ - This website is exposes to RESTful API's we can consume.
+   -> click All -> we got an all links https://restcountries.com/v3.1/all     
+
+   import {HttpClient} from '@angular/common/http' - This import is support for the all RESTful calls
+   GET, POST, PUT, all      
+
+
+
+
+
+
+
+
