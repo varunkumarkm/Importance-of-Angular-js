@@ -171,7 +171,13 @@ There are two approaches of forms are:
     2) Template Driven Forms - Template driven forms are internally MODEL DRIVEN FORMS there are 
        driven in the html instead of the code in the model.
        Just by adding the FormsModule to the ngModule configuration we will get a ngForm object that
-       we can use in our HTML template, Internally creates a FormGroup objects. 
+       we can use in our HTML template, Internally creates a FormGroup objects.
+
+   13) customDirectives - steps to creating a customDirectives are
+       * Create a Directive
+       * Use TemplateRef and ViewContainerRef
+       * Implement the logic 
+       createEmbeddedView() - This is the method will create a DOM dynamically
 
 
 

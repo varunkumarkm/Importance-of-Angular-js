@@ -8,6 +8,7 @@ import { SwitchComponent } from './switch/switch.component';
 import { SwitchExampComponent } from './switch-examp/switch-examp.component';
 import { ForComponent } from './for/for.component';
 import { ForExampComponent } from './for-examp/for-examp.component';
+import { MyIfDirective } from './customDirectives/my-if.directive';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ForExampComponent } from './for-examp/for-examp.component';
     SwitchComponent,
     SwitchExampComponent,
     ForComponent,
-    ForExampComponent
+    ForExampComponent,
+    MyIfDirective
   ],
   imports: [
     BrowserModule
