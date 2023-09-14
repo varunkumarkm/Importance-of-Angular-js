@@ -1,0 +1,20 @@
+<table border="1" cellspacing="5px" cellpadding="5px" align="center" style="font-size:20px;">
+    <thead style="background-color: aqua;">
+        <tr>
+            <th>PostId</th>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Body</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let c of values">
+            <td>{{ c.postId }}</td>
+            <td>{{ c.id }}</td>
+            <td>{{c.name}}</td>
+            <td>{{ c.email}}</td>
+            <td>{{ c.body}}</td>
+        </tr>
+    </tbody>
+</table>
