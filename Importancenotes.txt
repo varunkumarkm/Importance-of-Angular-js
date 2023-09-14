@@ -135,7 +135,27 @@ Amgular supports two way of binding?
    -> click All -> we got an all links https://restcountries.com/v3.1/all     
 
    import {HttpClient} from '@angular/common/http' - This import is support for the all RESTful calls
-   GET, POST, PUT, all      
+   GET, POST, PUT, all  
+
+11) Pipes
+-> Pipes are used to transform or format the data on the HTML template files
+There are several other inbuilt pipes are available in angular are:
+   *) titlecase  *) uppercase  *) lowercase   *) date  *) currency  *) json  *) number  *) percentage
+
+   *) titlecase - It converts the first letter in the given text to capital
+   *) uppercase - It converts the entire text to uppercase
+   *) lowercase - It converts the entire text to lowercase
+   *) date - It is used to format the date we are dealing with
+   *) currency - it used to displayed the different countries of currency 
+   *) json - it converts the javaScript objects into a json string
+   *) number - it formats a number
+      number:"{minIntererDigits}.{minDecimalDigits}-{maxDecimalDigits}"
+   *) percentages - it converts a given number to a percentages
+   *) async - it gives a promises a given processing and also slice that will work with arrays
+      slice [10,20,30,40,50] | slice:2:4
+
+   How to create a custom pipe 
+   -> we use the command is   (ng g p pipes/reversePipe) 
 
 
 
