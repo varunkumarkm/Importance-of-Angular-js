@@ -48,3 +48,18 @@ When we working on routing these three link is important
 2) Create <routing-outlet> in html
 3) import routing.module.ts in to AppModule
 
+
+Flight Reaervation Application:
+
+Creating a components are:
+1) Find flights
+2) Display flights
+3) Passenger details
+4) Confirm reservation
+
+reservationService - will have the one service responsible for making all the restful backend calls
+So, This service will act as a restful client for us.
+and also used *) Routing *) Forms *) Binding
+
+
+
